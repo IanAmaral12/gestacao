@@ -5,20 +5,29 @@ import 'quiz.dart';
 import 'creditos.dart';
 import 'resultado.dart';
 import 'calcsem.dart';
-
+import 'respostas.dart';
 
 void main() {
   runApp(AppMaterno());
 }
 
 class AppMaterno extends StatelessWidget {
-  const AppMaterno({super.key});
+  const AppMaterno({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, //remover o debug da tela
-      home: TelaInicial(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => TelaInicial(),
+        'creditos': (context) => TelaDeCreditosApp(),
+        'menu': (context) => TelaDeAcessoApp(),
+        'quiz': (context) => Quiz(),
+        Resultado.routeName: (context) => Resultado(),
+        'calcsem': (context) => TelaCalculadoraSemanas(),
+        Respostas.routeName: (context) => Respostas(),
+      },
+      debugShowCheckedModeBanner: false,
     );
   }
 }
