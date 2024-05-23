@@ -19,12 +19,7 @@ class Resultado extends StatelessWidget {
 
     return WillPopScope(
       onWillPop: () async {
-        // Redireciona para o menu ao pressionar a seta de voltar
-        Navigator.pushNamedAndRemoveUntil(
-          context,
-          'menu',
-              (Route<dynamic> route) => false,
-        );
+        Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
         return false;
       },
       child: Scaffold(
@@ -39,6 +34,12 @@ class Resultado extends StatelessWidget {
             ),
           ),
           centerTitle: true,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
+            },
+          ),
         ),
         body: Container(
           padding: const EdgeInsets.all(30),
@@ -117,6 +118,7 @@ class Resultado extends StatelessWidget {
                     ),
                   ),
                 ),
+                SizedBox(height: 20.0), // Adicionando um espaçamento para evitar que fique colado na barra inferior
               ],
             ),
           ),

@@ -6,6 +6,7 @@ import 'creditos.dart';
 import 'resultado.dart';
 import 'calcsem.dart';
 import 'respostas.dart';
+import 'revista_digital.dart'; // Importando a nova tela de revista digital
 
 void main() {
   runApp(AppMaterno());
@@ -26,6 +27,7 @@ class AppMaterno extends StatelessWidget {
         Resultado.routeName: (context) => Resultado(),
         'calcsem': (context) => TelaCalculadoraSemanas(),
         Respostas.routeName: (context) => Respostas(),
+        'revista_digital': (context) => RevistaDigitalScreen(), // Nova rota
       },
       debugShowCheckedModeBanner: false,
     );
