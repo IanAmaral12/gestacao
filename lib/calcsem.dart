@@ -1,45 +1,103 @@
 import 'package:flutter/material.dart';
 
 class GestacaoFetal {
-  static Map<int, String> semanaParaFruta = {
-    1: "assets/frutas/grao_de_arroz.png",
-    2: "assets/frutas/semente_de_papoula.png",
-    3: "assets/frutas/gergelim.png",
-    // ... adicionar os caminhos das outras imagens
-    40: "assets/frutas/jaca.png",
+  static Map<int, String> tamanhoFetoPorSemana = {
+    1: "Grão de Arroz",
+    2: "Semente de Papoula",
+    3: "Gergelim",
+    4: "Semente de Papoula",
+    5: "Semente de Maçã",
+    6: "Lentilha",
+    7: "Mirtilo",
+    8: "Framboesa",
+    9: "Uva",
+    10: "Ameixa Seca",
+    11: "Figo",
+    12: "Limão",
+    13: "Vagem Média",
+    14: "Limão Siciliano",
+    15: "Maçã",
+    16: "Avocado",
+    17: "Romã",
+    18: "Batata Doce",
+    19: "Laranja",
+    20: "Banana",
+    21: "Cenoura",
+    22: "Côco",
+    23: "Manga Grande",
+    24: "Melão Cantaloupe",
+    25: "Couve-Flor",
+    26: "Couve",
+    27: "Alface",
+    28: "Beringela",
+    29: "Abóbora Japonesa",
+    30: "Pepino",
+    31: "Aspargo",
+    32: "Nabo Mexicano",
+    33: "Salsão",
+    34: "Abóbora Paulista",
+    35: "Abacaxi",
+    36: "Mamão",
+    37: "Abóbora d'água",
+    38: "Abóbora",
+    39: "Melancia",
+    40: "Jaca",
   };
 
-  static Map<int, List<String>> examesPorSemana = {
-    1: [
-      'tipagem sanguínea', 'hemograma', 'glicemia de jejum',
-      // ... outras recomendações
+  static Map<String, List<String>> examesPorTrimestre = {
+    'Primeiro Trimestre (1 a 12 semanas)': [
+      'Confirmação da gravidez: Teste de beta-hCG.',
+      'Ultrassom inicial: Confirmação da idade gestacional e viabilidade da gestação.',
+      'Hemograma completo: Avaliação geral da saúde materna.',
+      'Glicemia de jejum: Avaliação do risco de diabetes gestacional.',
+      'Tipagem sanguínea e fator Rh: Importante para detectar incompatibilidades sanguíneas.',
+      'Sorologia para sífilis (VDRL): Teste de sífilis.',
+      'Sorologia para HIV: Teste de HIV.',
+      'Sorologia para hepatite B e C: Testes de hepatite.',
+      'Exame de urina (EAS e urocultura): Detecção de infecções urinárias.',
+      'TSH e T4 livre: Avaliação da função tireoidiana.',
+      'Coombs indireto: Para gestantes Rh-negativo.',
+      'Citologia cervical (Papanicolau): Se não foi feito recentemente.',
     ],
-    20: ['ultrassom morfológico de segundo trimestre', 'ultrassom transvaginal para medir o colo do útero', 'sorologia para toxoplasmose'],
-    24: ['teste oral de tolerância à glicose', 'ecocardiograma fetal'],
-    28: ['hemograma', 'exame de urina e cultura de urina', 'sorologias para HIV, sífilis e hepatite C', 'ultrassonografia obstétrica'],
-    35: ['hemograma', 'exame de urina e cultura de urina', 'sorologias para HIV, sífilis e hepatite C', 'ultrassonografia obstétrica'],
+    'Segundo Trimestre (13 a 28 semanas)': [
+      'Ultrassom morfológico de 1º trimestre (entre 11 e 14 semanas): Avaliação de anomalias fetais e translucência nucal.',
+      'Teste de tolerância à glicose (24 a 28 semanas): Diagnóstico de diabetes gestacional.',
+      'Hemograma completo: Reavaliação da saúde materna.',
+      'Sorologia para toxoplasmose: Repetir se necessário.',
+      'Sorologia para citomegalovírus: Repetir se necessário.',
+      'Sorologia para rubéola: Repetir se necessário.',
+      'Exame de urina (EAS e urocultura): Repetir para monitoramento de infecções.',
+      'Coombs indireto: Repetir para gestantes Rh-negativo.',
+      'Ultrassom morfológico de 2º trimestre (entre 20 e 24 semanas): Avaliação detalhada do desenvolvimento fetal.',
+    ],
+    'Terceiro Trimestre (29 a 40 semanas)': [
+      'Ultrassom obstétrico: Avaliação do crescimento fetal e da quantidade de líquido amniótico.',
+      'Hemograma completo: Monitoramento da saúde materna.',
+      'Glicemia de jejum: Repetir se necessário.',
+      'Sorologia para sífilis (VDRL): Repetir no terceiro trimestre.',
+      'Sorologia para HIV: Repetir no terceiro trimestre.',
+      'Sorologia para hepatite B e C: Repetir se necessário.',
+      'Exame de urina (EAS e urocultura): Repetir para monitoramento de infecções.',
+      'Teste para estreptococo do grupo B (35 a 37 semanas): Avaliação do risco de infecção neonatal.',
+      'Cardiotocografia: Avaliação da frequência cardíaca fetal e das contrações uterinas, especialmente em gestações de alto risco.',
+      'Perfil biofísico fetal: Avaliação do bem-estar fetal em gestações de alto risco.',
+    ],
   };
-
-  static Widget mostrarImagemFruta(int semanas) {
-    String? assetPath = semanaParaFruta[semanas];
-    if (assetPath != null) {
-      return Image.asset(
-        assetPath,
-        width: 200,
-        height: 200,
-        errorBuilder: (context, error, stackTrace) => Text('Erro ao carregar imagem'),
-      );
-    } else {
-      return Text("Não há correspondência para essa semana de gestação.");
-    }
-  }
 
   static String calcularTamanhoFeto(int semanas) {
-    return semanaParaFruta[semanas] != null ? semanaParaFruta[semanas]! : "Não há correspondência para essa semana de gestação.";
+    return tamanhoFetoPorSemana[semanas] ?? "Não há correspondência para essa semana de gestação.";
   }
 
   static List<String> examesNecessarios(int semanas) {
-    return examesPorSemana[semanas] ?? ["Nenhum exame recomendado para esta semana de gestação."];
+    if (semanas >= 1 && semanas <= 12) {
+      return examesPorTrimestre['Primeiro Trimestre (1 a 12 semanas)']!;
+    } else if (semanas >= 13 && semanas <= 28) {
+      return examesPorTrimestre['Segundo Trimestre (13 a 28 semanas)']!;
+    } else if (semanas >= 29 && semanas <= 40) {
+      return examesPorTrimestre['Terceiro Trimestre (29 a 40 semanas)']!;
+    } else {
+      return ["Nenhum exame recomendado para esta semana de gestação."];
+    }
   }
 }
 
@@ -82,21 +140,13 @@ class TelaCalculadoraSemanas extends StatefulWidget {
 class _TelaCalculadoraSemanas extends State<TelaCalculadoraSemanas> {
   TextEditingController semanasController = TextEditingController();
   String resultado = "";
-  Widget imagemFruta = Container(); // Inicializa como um Container vazio
 
   @override
-  void initState() {
-    super.initState();
-    imagemFruta = Container(); // Inicializa a variável de imagem
-  }
-
   void calcularTamanhoFeto() {
     int semanas = int.tryParse(semanasController.text) ?? 0;
     String tamanho = GestacaoFetal.calcularTamanhoFeto(semanas);
-    Widget imagem = GestacaoFetal.mostrarImagemFruta(semanas); // Obtém a imagem correspondente
     setState(() {
       resultado = tamanho;
-      imagemFruta = imagem; // Atualiza a variável de imagem
     });
   }
 
@@ -188,7 +238,6 @@ class _TelaCalculadoraSemanas extends State<TelaCalculadoraSemanas> {
                     ),
                   ),
                   SizedBox(height: 20),
-                  imagemFruta,
                   SizedBox(height: 20.0), // Adicionando um espaçamento para evitar que fique colado na barra inferior
                 ],
               ),

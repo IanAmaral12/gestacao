@@ -2,7 +2,7 @@
     package="com.example.gestacao">
 
     <application
-        android:label="gestacao"
+        android:label="Gestação"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

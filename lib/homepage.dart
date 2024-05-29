@@ -43,7 +43,7 @@ class TelaInicial extends StatelessWidget {
                 ),
                 child: Text(
                   'REVISTA DIGITAL',
-                  style: TextStyle(color: Colors.black, fontSize: 28.0),
+                  style: TextStyle(color: Colors.black, fontSize: 30.0),
                 ),
               ),
               SizedBox(height: 20.0),
@@ -56,7 +56,7 @@ class TelaInicial extends StatelessWidget {
                 },
                 child: Text(
                   'ACESSAR',
-                  style: TextStyle(color: Colors.black, fontSize: 38.0),
+                  style: TextStyle(color: Colors.black, fontSize: 28.0),
                 ),
               ),
               SizedBox(height: 20.0), // Adicionando um espaçamento para evitar que fique colado na barra inferior

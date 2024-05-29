@@ -59,7 +59,7 @@ class Resultado extends StatelessWidget {
                 ),
                 SizedBox(height: 20.0),
                 Text(
-                  'Parabéns! Você acertou: \n ${argumentos.acertos} de 14 perguntas',
+                  'Parabéns! Você acertou: \n ${argumentos.acertos} de 24 perguntas',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
@@ -69,7 +69,7 @@ class Resultado extends StatelessWidget {
                 ),
                 SizedBox(height: 20.0),
                 Text(
-                  'Você errou: \n ${argumentos.erros} de 14 perguntas',
+                  'Você errou: \n ${argumentos.erros} de 24 perguntas',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
