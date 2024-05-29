@@ -96,6 +96,7 @@
     <item name="text" type="id"/>
     <item name="text2" type="id"/>
     <item name="title" type="id"/>
+    <id name="view_tree_lifecycle_owner"/>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="status_bar_notification_info_overflow">999+</string>
@@ -146,6 +147,9 @@
         
         <attr format="float" name="alpha"/>
         <attr name="android:alpha"/>
+        
+        <attr format="float" name="lStar"/>
+        <attr name="android:lStar"/>
     </declare-styleable>
     <declare-styleable name="FontFamily">
         
@@ -239,6 +243,12 @@
         <attr name="android:offset"/>
         
         <attr name="android:color"/>
+    </declare-styleable>
+    <declare-styleable name="ScrollBar">
+        <attr format="color|reference" name="sb_handlerColor"/>
+        <attr format="color|reference" name="sb_indicatorColor"/>
+        <attr format="color|reference" name="sb_indicatorTextColor"/>
+        <attr format="boolean|reference" name="sb_horizontal"/>
     </declare-styleable>
     <declare-styleable name="SplitPairFilter">
         

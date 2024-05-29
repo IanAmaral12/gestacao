@@ -20,7 +20,7 @@
     <application
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:icon="@mipmap/ic_launcher"
-        android:label="gestacao" >
+        android:label="Gestação" >
         <activity
             android:name="com.example.gestacao.MainActivity"
             android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"

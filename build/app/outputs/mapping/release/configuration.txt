@@ -132,6 +132,9 @@
 -keep class com.example.gestacao.MainActivity { <init>(); }
 
 # End of content from C:\Users\Ian\AndroidStudioProjects\gestacao\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
+# The proguard configuration file for the following section is C:\Users\Ian\AndroidStudioProjects\gestacao\build\flutter_pdfview\intermediates\consumer_proguard_dir\release\lib0\proguard.txt
+-keep class com.shockwave.**
+# End of content from C:\Users\Ian\AndroidStudioProjects\gestacao\build\flutter_pdfview\intermediates\consumer_proguard_dir\release\lib0\proguard.txt
 # The proguard configuration file for the following section is C:\Users\Ian\.gradle\caches\transforms-3\f302e75fb7efd781bcf1a29281c188da\transformed\jetified-window-1.0.0-beta04\proguard.txt
 # Copyright (C) 2020 The Android Open Source Project
 #
@@ -240,7 +243,7 @@
     public static final android.os.Parcelable$Creator *;
 }
 # End of content from C:\Users\Ian\.gradle\caches\transforms-3\d0437f7986a0a2cb359d7d189a9ac969\transformed\media-1.1.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Ian\.gradle\caches\transforms-3\284a410c767ad6c7a2b0ffc8d8d85981\transformed\core-1.6.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Ian\.gradle\caches\transforms-3\a6a29264acf97bdb3027293ba8b3bb0c\transformed\core-1.7.0\proguard.txt
 # Never inline methods, but allow shrinking and obfuscation.
 -keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
   <methods>;
@@ -254,9 +257,19 @@
 -keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
   <methods>;
 }
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
 
-# End of content from C:\Users\Ian\.gradle\caches\transforms-3\284a410c767ad6c7a2b0ffc8d8d85981\transformed\core-1.6.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Ian\.gradle\caches\transforms-3\c90cbb536a765d0aacc835582ca9a629\transformed\lifecycle-runtime-2.2.0\proguard.txt
+# End of content from C:\Users\Ian\.gradle\caches\transforms-3\a6a29264acf97bdb3027293ba8b3bb0c\transformed\core-1.7.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Ian\.gradle\caches\transforms-3\17b52f3ce5be01faa0d2efabbb4c4451\transformed\versionedparcelable-1.1.1\proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# End of content from C:\Users\Ian\.gradle\caches\transforms-3\17b52f3ce5be01faa0d2efabbb4c4451\transformed\versionedparcelable-1.1.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Ian\.gradle\caches\transforms-3\82112359ef27c86626e392f5169dc84a\transformed\lifecycle-runtime-2.3.1\proguard.txt
 -keepattributes *Annotation*
 
 -keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
@@ -275,8 +288,19 @@
 }
 
 # this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
 -keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
-# End of content from C:\Users\Ian\.gradle\caches\transforms-3\c90cbb536a765d0aacc835582ca9a629\transformed\lifecycle-runtime-2.2.0\proguard.txt
+# End of content from C:\Users\Ian\.gradle\caches\transforms-3\82112359ef27c86626e392f5169dc84a\transformed\lifecycle-runtime-2.3.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Ian\.gradle\caches\transforms-3\1df962ed8245cc6ecc6dae80a3756f32\transformed\lifecycle-viewmodel-2.1.0\proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>();
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application);
+}
+
+# End of content from C:\Users\Ian\.gradle\caches\transforms-3\1df962ed8245cc6ecc6dae80a3756f32\transformed\lifecycle-viewmodel-2.1.0\proguard.txt
 # The proguard configuration file for the following section is C:\Users\Ian\.gradle\caches\transforms-3\7e968ee3de5b95fbce078b3b96a22dc0\transformed\jetified-savedstate-1.0.0\proguard.txt
 # Copyright (C) 2019 The Android Open Source Project
 #
@@ -297,23 +321,6 @@
 }
 
 # End of content from C:\Users\Ian\.gradle\caches\transforms-3\7e968ee3de5b95fbce078b3b96a22dc0\transformed\jetified-savedstate-1.0.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Ian\.gradle\caches\transforms-3\17b52f3ce5be01faa0d2efabbb4c4451\transformed\versionedparcelable-1.1.1\proguard.txt
--keep class * implements androidx.versionedparcelable.VersionedParcelable
--keep public class android.support.**Parcelizer { *; }
--keep public class androidx.**Parcelizer { *; }
--keep public class androidx.versionedparcelable.ParcelImpl
-
-# End of content from C:\Users\Ian\.gradle\caches\transforms-3\17b52f3ce5be01faa0d2efabbb4c4451\transformed\versionedparcelable-1.1.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Ian\.gradle\caches\transforms-3\1df962ed8245cc6ecc6dae80a3756f32\transformed\lifecycle-viewmodel-2.1.0\proguard.txt
--keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
-    <init>();
-}
-
--keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
-    <init>(android.app.Application);
-}
-
-# End of content from C:\Users\Ian\.gradle\caches\transforms-3\1df962ed8245cc6ecc6dae80a3756f32\transformed\lifecycle-viewmodel-2.1.0\proguard.txt
 # The proguard configuration file for the following section is C:\Users\Ian\.gradle\caches\transforms-3\67d1c69d4c41cb8901ed1326e7d1f850\transformed\rules\lib\META-INF\proguard\androidx-annotations.pro
 -keep,allowobfuscation @interface androidx.annotation.Keep
 -keep @androidx.annotation.Keep class * {*;}

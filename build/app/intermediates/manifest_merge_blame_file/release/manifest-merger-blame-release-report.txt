@@ -35,10 +35,10 @@
 20    <application
 20-->C:\Users\Ian\AndroidStudioProjects\gestacao\android\app\src\main\AndroidManifest.xml:4:5-23:19
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.6.0] C:\Users\Ian\.gradle\caches\transforms-3\284a410c767ad6c7a2b0ffc8d8d85981\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+21-->[androidx.core:core:1.7.0] C:\Users\Ian\.gradle\caches\transforms-3\a6a29264acf97bdb3027293ba8b3bb0c\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 22        android:icon="@mipmap/ic_launcher"
 22-->C:\Users\Ian\AndroidStudioProjects\gestacao\android\app\src\main\AndroidManifest.xml:6:9-43
-23        android:label="gestacao" >
+23        android:label="Gestação" >
 23-->C:\Users\Ian\AndroidStudioProjects\gestacao\android\app\src\main\AndroidManifest.xml:5:9-33
 24        <activity
 24-->C:\Users\Ian\AndroidStudioProjects\gestacao\android\app\src\main\AndroidManifest.xml:7:9-22:20

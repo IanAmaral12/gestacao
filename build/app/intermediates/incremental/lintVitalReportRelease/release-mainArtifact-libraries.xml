@@ -17,6 +17,19 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="C:\Users\Ian\AndroidStudioProjects\gestacao\android@@:flutter_pdfview::release"
+      jars="C:\Users\Ian\AndroidStudioProjects\gestacao\build\flutter_pdfview\.transforms\13b2b1abf317b3528ef4071e5db75619\transformed\out\jars\classes.jar;C:\Users\Ian\AndroidStudioProjects\gestacao\build\flutter_pdfview\.transforms\13b2b1abf317b3528ef4071e5db75619\transformed\out\jars\libs\R.jar"
+      resolved="io.endigo.plugings.pdfview:flutter_pdfview:unspecified"
+      folder="C:\Users\Ian\AndroidStudioProjects\gestacao\build\flutter_pdfview\.transforms\13b2b1abf317b3528ef4071e5db75619\transformed\out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="C:\Users\Ian\AndroidStudioProjects\gestacao\android@@:path_provider_android::release"
       jars="C:\Users\Ian\AndroidStudioProjects\gestacao\build\path_provider_android\.transforms\5a1b92efc0ed3d492976c33ecd73d4aa\transformed\out\jars\classes.jar;C:\Users\Ian\AndroidStudioProjects\gestacao\build\path_provider_android\.transforms\5a1b92efc0ed3d492976c33ecd73d4aa\transformed\out\jars\libs\R.jar"
       resolved="io.flutter.plugins.pathprovider:path_provider_android:unspecified"
@@ -162,10 +175,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.core:core:1.6.0@aar"
-      jars="C:\Users\Ian\.gradle\caches\transforms-3\284a410c767ad6c7a2b0ffc8d8d85981\transformed\core-1.6.0\jars\classes.jar"
-      resolved="androidx.core:core:1.6.0"
-      folder="C:\Users\Ian\.gradle\caches\transforms-3\284a410c767ad6c7a2b0ffc8d8d85981\transformed\core-1.6.0"
+      name="androidx.core:core:1.7.0@aar"
+      jars="C:\Users\Ian\.gradle\caches\transforms-3\a6a29264acf97bdb3027293ba8b3bb0c\transformed\core-1.7.0\jars\classes.jar"
+      resolved="androidx.core:core:1.7.0"
+      folder="C:\Users\Ian\.gradle\caches\transforms-3\a6a29264acf97bdb3027293ba8b3bb0c\transformed\core-1.7.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -179,10 +192,10 @@
       jars="C:\Users\Ian\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-common-java8\2.2.0\cd3478503da69b1a7e0319bd2d1389943db9b364\lifecycle-common-java8-2.2.0.jar"
       resolved="androidx.lifecycle:lifecycle-common-java8:2.2.0"/>
   <library
-      name="androidx.lifecycle:lifecycle-runtime:2.2.0@aar"
-      jars="C:\Users\Ian\.gradle\caches\transforms-3\c90cbb536a765d0aacc835582ca9a629\transformed\lifecycle-runtime-2.2.0\jars\classes.jar"
-      resolved="androidx.lifecycle:lifecycle-runtime:2.2.0"
-      folder="C:\Users\Ian\.gradle\caches\transforms-3\c90cbb536a765d0aacc835582ca9a629\transformed\lifecycle-runtime-2.2.0"
+      name="androidx.lifecycle:lifecycle-runtime:2.3.1@aar"
+      jars="C:\Users\Ian\.gradle\caches\transforms-3\82112359ef27c86626e392f5169dc84a\transformed\lifecycle-runtime-2.3.1\jars\classes.jar"
+      resolved="androidx.lifecycle:lifecycle-runtime:2.3.1"
+      folder="C:\Users\Ian\.gradle\caches\transforms-3\82112359ef27c86626e392f5169dc84a\transformed\lifecycle-runtime-2.3.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -231,14 +244,14 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.lifecycle:lifecycle-common:2.2.0@jar"
-      jars="C:\Users\Ian\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-common\2.2.0\4ef09a745007778eef83b92f8f23987a8ea59496\lifecycle-common-2.2.0.jar"
-      resolved="androidx.lifecycle:lifecycle-common:2.2.0"/>
+      name="androidx.lifecycle:lifecycle-common:2.3.1@jar"
+      jars="C:\Users\Ian\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-common\2.3.1\fc466261d52f4433863642fb40d12441ae274a98\lifecycle-common-2.3.1.jar"
+      resolved="androidx.lifecycle:lifecycle-common:2.3.1"/>
   <library
-      name="androidx.arch.core:core-runtime:2.0.0@aar"
-      jars="C:\Users\Ian\.gradle\caches\transforms-3\6215b4bd78f4714ee01c803dc871408f\transformed\core-runtime-2.0.0\jars\classes.jar"
-      resolved="androidx.arch.core:core-runtime:2.0.0"
-      folder="C:\Users\Ian\.gradle\caches\transforms-3\6215b4bd78f4714ee01c803dc871408f\transformed\core-runtime-2.0.0"
+      name="androidx.arch.core:core-runtime:2.1.0@aar"
+      jars="C:\Users\Ian\.gradle\caches\transforms-3\2cc54ca65f294fdb232731188da6beeb\transformed\core-runtime-2.1.0\jars\classes.jar"
+      resolved="androidx.arch.core:core-runtime:2.1.0"
+      folder="C:\Users\Ian\.gradle\caches\transforms-3\2cc54ca65f294fdb232731188da6beeb\transformed\core-runtime-2.1.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -341,7 +354,41 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="com.github.mhiew:android-pdf-viewer:3.2.0-beta.3@aar"
+      jars="C:\Users\Ian\.gradle\caches\transforms-3\e3a961863bd3b0bf6c2445c24915f9bf\transformed\jetified-android-pdf-viewer-3.2.0-beta.3\jars\classes.jar"
+      resolved="com.github.mhiew:android-pdf-viewer:3.2.0-beta.3"
+      folder="C:\Users\Ian\.gradle\caches\transforms-3\e3a961863bd3b0bf6c2445c24915f9bf\transformed\jetified-android-pdf-viewer-3.2.0-beta.3"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="com.google.code.gson:gson:2.8.9@jar"
       jars="C:\Users\Ian\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.9\8a432c1d6825781e21a02db2e2c33c5fde2833b9\gson-2.8.9.jar"
       resolved="com.google.code.gson:gson:2.8.9"/>
+  <library
+      name="androidx.concurrent:concurrent-futures:1.0.0@jar"
+      jars="C:\Users\Ian\.gradle\caches\modules-2\files-2.1\androidx.concurrent\concurrent-futures\1.0.0\c1e77e3ee6f4643b77496a1ddf7a2eef1aefdaa1\concurrent-futures-1.0.0.jar"
+      resolved="androidx.concurrent:concurrent-futures:1.0.0"/>
+  <library
+      name="com.github.mhiew:pdfium-android:1.9.2@aar"
+      jars="C:\Users\Ian\.gradle\caches\transforms-3\a5a1bc1904941a8a0887083772248cab\transformed\jetified-pdfium-android-1.9.2\jars\classes.jar"
+      resolved="com.github.mhiew:pdfium-android:1.9.2"
+      folder="C:\Users\Ian\.gradle\caches\transforms-3\a5a1bc1904941a8a0887083772248cab\transformed\jetified-pdfium-android-1.9.2"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.guava:listenablefuture:1.0@jar"
+      jars="C:\Users\Ian\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\1.0\c949a840a6acbc5268d088e47b04177bf90b3cad\listenablefuture-1.0.jar"
+      resolved="com.google.guava:listenablefuture:1.0"/>
 </libraries>
